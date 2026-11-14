@@ -1,0 +1,6 @@
+{
+  "name": "SkillPilot",
+  "description": "AI-powered personalized learning platform with collaborating agents for skill verification, career gap analysis, curated roadmaps, and adaptive mentoring.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
