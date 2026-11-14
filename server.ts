@@ -2196,7 +2196,9 @@ ${JSON.stringify(compactCatalog)}`,
   });
 
   // Frontend serving (Vite dev middleware or static dist/)
-  if (process.env.NODE_ENV !== 'production') {
+  const isProduction =
+    process.env.NODE_ENV === 'production' || process.env.npm_lifecycle_event === 'start';
+  if (!isProduction) {
     const { createServer: createViteServer } = await import('vite');
     const vite = await createViteServer({
       server: { middlewareMode: true },
